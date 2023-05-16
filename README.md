@@ -8,4 +8,4 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/50a6dcbd1256f1826c34/test_coverage)](https://codeclimate.com/github/dkalabukhov/frontend-project-46/test_coverage)
 
 # Вычислитель отличий
-[![asciicast](https://asciinema.org/a/579775.svg)](https://asciinema.org/a/579775)
+[![asciicast](https://asciinema.org/a/585188.svg)](https://asciinema.org/a/585188)
