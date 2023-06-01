@@ -1,7 +1,7 @@
 /* eslint no-restricted-syntax: ["off", "ForOfStatement"] */
 import path from 'node:path';
-import { readFileSync } from 'node:fs';
 import _ from 'lodash';
+import parser from './parser.js';
 
 const resolvePath = (filePath) => (filePath.includes('__fixtures__')
   ? path.resolve(process.cwd(), filePath)
@@ -11,8 +11,8 @@ const gendiff = (filepath1, filepath2) => {
   const path1 = resolvePath(filepath1);
   const path2 = resolvePath(filepath2);
 
-  const data1 = JSON.parse(readFileSync(path1, 'utf-8'));
-  const data2 = JSON.parse(readFileSync(path2, 'utf-8'));
+  const data1 = parser(path1);
+  const data2 = parser(path2);
 
   const keys = _.union(Object.keys(data1), Object.keys(data2)).sort();
   const result = ['{'];
