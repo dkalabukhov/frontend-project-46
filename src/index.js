@@ -10,8 +10,8 @@ export default function showDiff(filepath1, filepath2) {
   const path1 = resolvePath(filepath1);
   const path2 = resolvePath(filepath2);
 
-  const obj1 = JSON.parse(readFileSync(path1, 'utf-8'))
-  const obj2 = JSON.parse(readFileSync(path2, 'utf-8'))
+  const obj1 = JSON.parse(readFileSync(path1, 'utf-8'));
+  const obj2 = JSON.parse(readFileSync(path2, 'utf-8'));
 
   const data1Keys = _.keys(obj1);
   const data2Keys = _.keys(obj2);
@@ -24,7 +24,7 @@ export default function showDiff(filepath1, filepath2) {
     return [
       '{',
       ...lines,
-      '}'
+      '}',
     ].join('\n');
   }
 
@@ -42,7 +42,7 @@ export default function showDiff(filepath1, filepath2) {
     }
 
     return `${indent}- ${key}: ${obj1[key]}\n${indent}+ ${key}: ${obj2[key]}`;
-  })
+  });
 
   return stylish(lines);
 }
