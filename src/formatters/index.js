@@ -9,6 +9,9 @@ export default function formatter(tree, format) {
     case 'plain': {
       return makePlainDiff(tree);
     }
+    case 'json': {
+      return JSON.stringify(tree);
+    }
     default: {
       throw new Error('Please enter the correct format');
     }
