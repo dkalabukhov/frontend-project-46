@@ -1,14 +1,14 @@
 import showDiff from '../src/index.js';
-import result from '../__fixtures__/result.js';
+import resultStylish from '../__fixtures__/resultStylish.js';
 
-describe('plainObjects', () => {
+describe('stylish', () => {
   test('json', () => {
-    expect(showDiff('./__fixtures__/file1.json', './__fixtures__/file2.json')).toBe(result);
+    expect(showDiff('./__fixtures__/file1.json', './__fixtures__/file2.json')).toBe(resultStylish);
   });
   test('yaml', () => {
-    expect(showDiff('./__fixtures__/file1.yaml', './__fixtures__/file2.yaml')).toBe(result);
+    expect(showDiff('./__fixtures__/file1.yaml', './__fixtures__/file2.yaml')).toBe(resultStylish);
   });
   test('yml', () => {
-    expect(showDiff('./__fixtures__/file1.yml', './__fixtures__/file2.yml')).toBe(result);
+    expect(showDiff('./__fixtures__/file1.yml', './__fixtures__/file2.yml')).toBe(resultStylish);
   });
 });
