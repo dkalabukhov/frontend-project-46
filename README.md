@@ -18,7 +18,7 @@ This is a console utility for comparising two objects. The utility accepts objec
 git clone git@github.com:dkalabukhov/frontend-project-46.git
 cd frontend-project-46
 make install
-npm link
+make publish
 ```
 
 # Usage
