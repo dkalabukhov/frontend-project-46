@@ -8,7 +8,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4ae2b2a1fd2eda19d1c4/test_coverage)](https://codeclimate.com/github/dkalabukhov/frontend-project-46/test_coverage)
 
 # Difference checker
-This is a console utility for comparising two objects. The utility accepts objects in the following formats: JSOM, YML and YAML.
+This is a console utility for comparising two objects. The utility accepts objects in the following formats: JSON, YML and YAML.
 
 # Example of usage
 [![asciicast](https://asciinema.org/a/628619.svg)](https://asciinema.org/a/628619)
